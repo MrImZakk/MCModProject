@@ -1,0 +1,9 @@
+package arcanemod.common;
+/// unsure what this class is used for, guessing it's used for multiplayer
+public class CommonProxy 
+{ 
+    public void registerRenderers() 
+    {
+            
+    }
+}
