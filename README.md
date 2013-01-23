@@ -1,0 +1,4 @@
+MCModProject
+============
+
+MC mod
