@@ -1,0 +1,24 @@
+package arcanemod.common;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemSpade;
+
+public class Tool_RedArcaneShovel extends ItemSpade 
+{
+
+  public Tool_RedArcaneShovel(int par1, EnumToolMaterial par2EnumToolMaterial) 
+	{
+		super(par1, par2EnumToolMaterial);
+		setItemName("RedArcaneShovel");
+		setCreativeTab(CreativeTabs.tabTools);
+		bFull3D = true;
+		efficiencyOnProperMaterial = 3.0F;
+		
+	}
+	public String getTextureFile () 
+    {
+      return "/arcanemodtextures/ArcaneMod_Items.png";
+    }
+
+}
