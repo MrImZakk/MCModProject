@@ -1,0 +1,29 @@
+package arcanemod.common;
+
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumRarity;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+
+public class Tool_RedArcanePickaxe extends ItemPickaxe
+{
+
+  public Tool_RedArcanePickaxe(int par1, EnumToolMaterial par2EnumToolMaterial) 
+	{
+		super(par1, par2EnumToolMaterial);
+		setItemName("RedArcanePickaxe");
+		bFull3D = true;                  // If the item is held in the players hand like a sword or not
+		setCreativeTab(CreativeTabs.tabTools);
+		
+		
+	}
+	
+	public String getTextureFile () 
+	  {
+        return "/arcanemodtextures/ArcaneMod_Items.png";
+      }
+	
+
+}
