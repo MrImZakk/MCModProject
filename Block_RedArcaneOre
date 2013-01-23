@@ -1,0 +1,39 @@
+package arcanemod.common;
+
+import java.util.Random;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.world.World;
+
+public class Block_RedArcaneOre extends Block 
+{
+
+  public Block_RedArcaneOre(int par1, int par2, Material par3Material)
+	{
+		super(par1, par2, par3Material);
+		setCreativeTab(CreativeTabs.tabBlock);
+		setHardness(3.0F);
+		setBlockName("RedArcaneOre");
+		setStepSound(Block.soundStoneFootstep); // What the sound is when you walk on the block
+		
+		
+	}
+	public String getTextureFile () 
+	  {
+            return "/arcanemodtextures/ArcaneMod_Blocks.png";
+    }
+	  public int idDropped(int par1, Random rand, int par2) // What block/item it drops
+	  {
+		return arcanemod.RedArcaneFragments.itemID; 
+		  
+	  }
+	  public int quantityDropped(Random rand) // How many of said item drops
+	    {
+	        return 1 + rand.nextInt(3);
+	    }
+	 
+
+
+}
