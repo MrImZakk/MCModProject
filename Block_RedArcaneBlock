@@ -1,0 +1,23 @@
+package arcanemod.common;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class Block_RedArcaneBlock extends Block
+{
+
+  public Block_RedArcaneBlock(int par1, int par2, Material par3Material) 
+	{
+		super(par1, par2, par3Material);
+		setCreativeTab(CreativeTabs.tabBlock); // Puts the block/item in said Creative Menu tab
+		setBlockName("RedArcaneBlock");
+		setHardness(3.0F);                   // Hardness is how hard it is to break said block with a tool
+		setStepSound(Block.soundStoneFootstep);
+	}
+	public String getTextureFile () 
+	  {
+          return "/arcanemodtextures/ArcaneMod_Blocks.png"; // loads the texture sheet on the block/item
+      }
+
+}
