@@ -1,0 +1,24 @@
+package arcanemod.common;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemAxe;
+
+public class Tool_RedArcaneAxe extends ItemAxe
+{
+
+  public Tool_RedArcaneAxe(int par1, EnumToolMaterial par2EnumToolMaterial) 
+	{
+		super(par1, par2EnumToolMaterial);
+		setItemName("RedArcaneAxe");
+		bFull3D = true;
+		setCreativeTab(CreativeTabs.tabTools);
+		efficiencyOnProperMaterial = 3.0F; // How  efficient the tool is on the block(s) the tool is allowed to harvest 
+	}
+	public String getTextureFile () 
+    {
+      return "/arcanemodtextures/ArcaneMod_Items.png";
+    }
+	
+
+}
