@@ -1,0 +1,15 @@
+package arcanemod.client;
+
+import net.minecraftforge.client.MinecraftForgeClient;
+import arcanemod.common.CommonProxy;
+
+public class ClientProxy extends CommonProxy 
+{
+       /// a class for Multiplayer, useless if the mod is Singleplayer only
+  /// anything that goes into this class is loaded on the client side of Multiplayer
+        @Override
+        public void registerRenderers() {
+               
+        }
+       
+}
