@@ -1,0 +1,23 @@
+package arcanemod.common;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemHoe;
+
+public class Tool_RedArcaneHoe extends ItemHoe 
+{
+
+  public Tool_RedArcaneHoe(int par1, EnumToolMaterial par2EnumToolMaterial) {
+		super(par1, par2EnumToolMaterial);
+		setItemName("RedArcaneHoe");
+		setCreativeTab(CreativeTabs.tabTools);
+		bFull3D = true;
+
+		
+	}
+	public String getTextureFile () 
+	  {
+      return "/arcanemodtextures/ArcaneMod_Items.png";
+    }
+
+}
