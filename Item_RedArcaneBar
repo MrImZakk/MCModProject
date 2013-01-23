@@ -1,0 +1,23 @@
+package arcanemod.common;
+
+import net.minecraft.client.particle.EffectRenderer;
+import net.minecraft.client.particle.EntityPortalFX;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class Item_RedArcaneBar extends Item
+{
+
+  public Item_RedArcaneBar(int par1) 
+	{
+		super(par1);
+		setCreativeTab(CreativeTabs.tabMaterials);
+		setItemName("RedArcaneBar");
+		
+	}
+	public String getTextureFile () 
+	  {
+        return "/arcanemodtextures/ArcaneMod_Items.png";
+}
+
+}
